@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dasboard</title>
+
+
+    <!-- bootraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- fontAewsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">TODOAPP</a>
+            <form class="d-flex">
+                <i class="fas fa-user-tie mx-3 fs-2 my-1"></i>
+                <h4 class="my-1"> Welcome <span id="username"></span></h4>
+                <button class="btn btn-outline-success mx-3" onclick="logOut()"> LOG OUT</button>
+
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="mb-3">
+
+            <input type="email" class="form-control" id="todo" placeholder="Enter Todo">
+            <input type="file" class="form-control my-3" id="imageFile" placeholder="Enter Todo">
+
+            <button onclick="addTodo()" class="btn btn-primary my-3"> ADD TODO</button>
+
+        </div>
+
+
+
+        <div id="main">
+
+        </div>
+    </div>
+    <div class="container my-5 ">
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container py-5">
+        <h1 class="mb-4 text-center">NEW PRODUCTS</h1>
+        <div class="row g-3 mx-auto">
+            <div class="col col-sm-12 col-md-3">
+                <div class="card">
+                    <img src="https://www.collinsdictionary.com/images/full/pen_525053431_1000.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"> content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <div class="card">
+                    <img src="https://www.collinsdictionary.com/images/full/pen_525053431_1000.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="">SURF EXCEL 3 KG </h5>
+                        <p class="">content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <div class="card">
+                    <img src="https://www.collinsdictionary.com/images/full/pen_525053431_1000.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="">Card title</h5>
+                        <p class=""> content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3">
+                <div class="card">
+                    <img src="https://www.collinsdictionary.com/images/full/pen_525053431_1000.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>Card title</h5>
+                        <p> content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAZClqvSy2pkr9x-7gYAxJM_SE6eNgxhzU",
+            authDomain: "fir-practics-77abb.firebaseapp.com",
+            projectId: "fir-practics-77abb",
+            storageBucket: "fir-practics-77abb.appspot.com",
+            messagingSenderId: "433969202488",
+            appId: "1:433969202488:web:51c27d78baac2eb1d4edcd"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+
+
+</body>
+<!-- js -->
+<script src="./dashboard.js"></script>
+
+</html>
